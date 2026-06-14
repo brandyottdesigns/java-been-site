@@ -290,3 +290,107 @@ footer {
   flex-direction: column;
 }
 }
+/* Contact Form Styles */
+
+.form-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f7f3ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(60, 40, 25, 0.15);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #3b2416;
+  margin-bottom: 10px;
+}
+
+.form-container p {
+  text-align: center;
+  color: #5c4433;
+  margin-bottom: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label,
+legend {
+  font-weight: bold;
+  color: #3b2416;
+  margin-top: 14px;
+  margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #b8a99a;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #8b5e3c;
+  border-color: #8b5e3c;
+}
+
+fieldset {
+  margin-top: 14px;
+  padding: 15px;
+  border: 1px solid #b8a99a;
+  border-radius: 6px;
+}
+
+fieldset label {
+  font-weight: normal;
+  margin-right: 20px;
+}
+
+.error {
+  color: #b00020;
+  font-size: 14px;
+  margin-top: 4px;
+  min-height: 18px;
+}
+
+button {
+  margin-top: 22px;
+  padding: 14px;
+  background-color: #5c3a21;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b2416;
+}
+
+#successMessage {
+  color: #2f6b2f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 18px;
+}
+fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+fieldset input[type="radio"] {
+  width: auto;
+}
