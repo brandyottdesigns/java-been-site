@@ -394,3 +394,45 @@ fieldset label {
 fieldset input[type="radio"] {
   width: auto;
 }
+/* Contact Page Layout Fix */
+
+body {
+  margin: 0;
+}
+
+.form-container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 35px;
+}
+
+#contactForm {
+  width: 100%;
+}
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactForm button {
+  width: 100%;
+}
+
+#contactForm fieldset {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#contactForm fieldset label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#contactForm fieldset input[type="radio"] {
+  width: auto;
+}
