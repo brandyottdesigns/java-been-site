@@ -13,17 +13,21 @@
 
   <header>
     <nav class="navbar">
-      <div class="logo">Java Been</div>
+      <a href="index.html" class="logo">
+  <img src="images/jb-mainlogo.png" alt="Java Been logo">
+</a>
 
       <button class="menu-toggle" id="menuToggle">
         ☰
       </button>
 
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#favorites">Favorites</a></li>
-        <li><a href="#order">Order</a></li>
-      </ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
     </nav>
   </header>
 
@@ -33,66 +37,105 @@
       <div class="hero-text">
         <h1>Java Been</h1>
         <p>Atmosphere. Company. Coffee.</p>
-        <a href="#order" class="button">Start an Order</a>
+      <a href="menu.html" class="button">View Menu</a>
       </div>
     </section>
+<section class="welcome-section">
+  <div class="welcome-text">
+    <h2>Welcome to Java Been</h2>
+    <p>
+      Located in the heart of the arts district, Java Been is a place to work,
+      connect, create, and unwind. Whether you're here for a morning espresso,
+      an afternoon meeting, or an evening of live music, you belong here.
+    </p>
+    <a href="about.html" class="button">Learn More</a>
+  </div>
 
+  <div class="welcome-image">
+    <img src="images/welcome-shop.png" alt="Interior view of Java Been coffee shop" />
+  </div>
+</section>
     <section class="content-section" id="favorites">
       <h2>Featured Favorites</h2>
       <p>Choose from fresh coffee, baked goods, and warm drinks made for a cozy coffee shop experience.</p>
 
       <div class="cards">
-        <div class="card">
-          <h3>Signature Coffee</h3>
-          <p>Fresh brewed coffee made for a calm morning or afternoon break.</p>
-        </div>
+  <div class="card">
+    <img src="images/signature-cups.png" alt="Coffee cups with latte art">
+    <h3>Signature Coffee</h3>
+    <p>Handcrafted coffee and espresso drinks made with care.</p>
+  </div>
 
-        <div class="card">
-          <h3>Fresh Baked Goods</h3>
-          <p>Pastries and treats that pair well with hot or iced coffee.</p>
-        </div>
+  <div class="card">
+    <img src="images/baked-goods.png" alt="Fresh baked pastry with strawberries">
+    <h3>Fresh Baked Goods</h3>
+    <p>Pastries and treats for work, study, or a quick break.</p>
+  </div>
 
-        <div class="card">
-          <h3>Evening Specials</h3>
-          <p>Seasonal drinks and small bites for a relaxed evening visit.</p>
-        </div>
-      </div>
+  <div class="card">
+    <img src="images/music.png" alt="Musician performing at Java Been">
+    <h3>Evening Specials</h3>
+    <p>Music, art, and community events in a creative cafe space.</p>
+  </div>
+</div>
     </section>
 
-    <section class="form-section" id="order">
-      <h2>Start Your Order</h2>
-      <p>Fill out the form below. JavaScript will check that the required fields are completed correctly before the form submits.</p>
+    <section class="events-preview">
+  <div class="events-text">
+    <h2>More Than a Coffee Shop</h2>
+    <p>
+      From local music and art exhibitions to study nights and meetings,
+      Java Been is a creative space where community and coffee come together.
+    </p>
+    <a href="events.html" class="button">See Events</a>
+  </div>
 
-      <form id="orderForm" novalidate>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your name" />
+  <div class="events-image">
+    <img src="images/events-image.jpg" alt="Community event inside Java Been coffee shop" />
+  </div>
+</section>
+<section class="visit-section">
+  <h2>Visit Java Been</h2>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email" />
+  <div class="visit-grid">
+    <div class="visit-item">
+      <img src="images/address-icon.png" alt="" class="visit-icon">
+      <h3>Address</h3>
+      <p>123 River Mill Road<br>Riverton, ST 54321</p>
+    </div>
 
-        <label for="drink">Choose a Drink</label>
-        <select id="drink">
-          <option value="">-- Select a drink --</option>
-          <option value="Hot Coffee">Hot Coffee</option>
-          <option value="Iced Coffee">Iced Coffee</option>
-          <option value="Latte">Latte</option>
-          <option value="Tea">Tea</option>
-        </select>
+    <div class="visit-item">
+      <img src="images/hours-icon.png" alt="" class="visit-icon">
+      <h3>Hours</h3>
+      <p>Mon–Sat: 7AM–9PM<br>Sun: 8AM–6PM</p>
+    </div>
 
-        <label for="quantity">Quantity</label>
-        <input type="number" id="quantity" placeholder="Enter quantity" />
+    <div class="visit-item">
+      <img src="images/phone-icon.png" alt="" class="visit-icon">
+      <h3>Phone</h3>
+      <p>(555) 123-4567</p>
+    </div>
+  </div>
 
-        <button type="submit">Submit Order</button>
-
-        <p id="formMessage"></p>
-      </form>
-    </section>
-
+  <a href="contact.html" class="button">Contact Us</a>
+</section>
   </main>
 
-  <footer>
+<footer>
+  <div class="footer-content">
+    <img src="images/jb-mainlogo.png" alt="Java Been logo" class="footer-logo">
+
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
     <p>&copy; 2026 Java Been Coffee Shop</p>
-  </footer>
+  </div>
+</footer>
 
   <script src="script.js"></script>
 </body>

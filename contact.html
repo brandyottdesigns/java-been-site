@@ -10,77 +10,129 @@
 
      <header>
     <nav class="navbar">
-      <div class="logo">Java Been</div>
+      <a href="index.html" class="logo">
+  <img src="images/jb-mainlogo.png" alt="Java Been logo">
+</a>
 
       <button class="menu-toggle" id="menuToggle">
         ☰
       </button>
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#favorites">Favorites</a></li>
-        <li><a href="#order">Order</a></li>
-      </ul>
+    <ul class="nav-links" id="navLinks">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="events.html">Events</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
     </nav>
   </header>
 
-  <main class="form-container">
-    <h1>Contact Us</h1>
-    <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+  <main>
+  <section class="page-hero">
+    <h1>Contact Java Been</h1>
+    <p>Have a question, special request, or order-ahead message? Send us a note.</p>
+  </section>
 
-    <form id="contactForm" novalidate>
-      
-      <label for="firstName">First Name *</label>
-      <input type="text" id="firstName" name="firstName">
-      <span class="error" id="firstNameError"></span>
+  <section class="contact-page-section">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>
+        Java Been is here for coffee questions, order-ahead requests, event details,
+        and general messages. Fill out the form and we will get back to you as soon as possible.
+      </p>
 
-      <label for="lastName">Last Name *</label>
-      <input type="text" id="lastName" name="lastName">
-      <span class="error" id="lastNameError"></span>
+      <div class="contact-detail">
+        <h3>Address</h3>
+        <p>123 River Mill Road<br>Riverton, ST 54321</p>
+      </div>
 
-      <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email">
-      <span class="error" id="emailError"></span>
+      <div class="contact-detail">
+        <h3>Hours</h3>
+        <p>Mon–Sat: 7AM–9PM<br>Sun: 8AM–6PM</p>
+      </div>
 
-      <label for="phone">Phone Number *</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
-      <span class="error" id="phoneError"></span>
+      <div class="contact-detail">
+        <h3>Phone</h3>
+        <p>(555) 123-4567</p>
+      </div>
+    </div>
 
-      <label for="reason">Reason for Contact *</label>
-      <select id="reason" name="reason">
-        <option value="">Select a reason</option>
-        <option value="general">General Question</option>
-        <option value="order">Order Question</option>
-        <option value="support">Customer Support</option>
-        <option value="other">Other</option>
-      </select>
-      <span class="error" id="reasonError"></span>
+    <div class="contact-form-card">
+      <h2>Contact Us</h2>
+      <p>Please fill out the form below and we will get back to you as soon as possible.</p>
 
-      <fieldset>
-        <legend>Preferred Contact Method *</legend>
+      <form id="contactForm" novalidate>
+        
+        <label for="firstName">First Name *</label>
+        <input type="text" id="firstName" name="firstName">
+        <span class="error" id="firstNameError"></span>
 
-        <label>
-          <input type="radio" name="contactMethod" value="email">
-          Email
-        </label>
+        <label for="lastName">Last Name *</label>
+        <input type="text" id="lastName" name="lastName">
+        <span class="error" id="lastNameError"></span>
 
-        <label>
-          <input type="radio" name="contactMethod" value="phone">
-          Phone
-        </label>
-      </fieldset>
-      <span class="error" id="contactMethodError"></span>
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email">
+        <span class="error" id="emailError"></span>
 
-      <label for="message">Message *</label>
-      <textarea id="message" name="message" rows="5"></textarea>
-      <span class="error" id="messageError"></span>
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+        <span class="error" id="phoneError"></span>
 
-      <button type="submit">Submit Contact Form</button>
+        <label for="reason">Reason for Contact *</label>
+        <select id="reason" name="reason">
+          <option value="">Select a reason</option>
+          <option value="general">General Question</option>
+          <option value="order">Order Question</option>
+          <option value="support">Customer Support</option>
+          <option value="other">Other</option>
+        </select>
+        <span class="error" id="reasonError"></span>
 
-      <p id="successMessage"></p>
-    </form>
-  </main>
+        <fieldset>
+          <legend>Preferred Contact Method *</legend>
 
-  <script src="contact.js"></script>
+          <label>
+            <input type="radio" name="contactMethod" value="email">
+            Email
+          </label>
+
+          <label>
+            <input type="radio" name="contactMethod" value="phone">
+            Phone
+          </label>
+        </fieldset>
+        <span class="error" id="contactMethodError"></span>
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+        <span class="error" id="messageError"></span>
+
+        <button type="submit">Submit Contact Form</button>
+
+        <p id="successMessage"></p>
+      </form>
+    </div>
+  </section>
+</main>
+  <footer>
+  <div class="footer-content">
+    <img src="images/jb-mainlogo.png" alt="Java Been logo" class="footer-logo">
+
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <p>&copy; 2026 Java Been Coffee Shop</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js"></script>
 </body>
 </html>
